@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">LoginRegistrationProject</string>
+    <string name="loginTitle">Login</string>
+    <string name="enterEmailForLogin">Enter your email</string>
+    <string name="enterPasswordForLogin">Enter your password</string>
+    <string name="loginButtonText">Login</string>
+    <string name="signUpForAccountText">Don\'t have an account?</string>
+    <string name="signUpForAccountLink"><u>Sign Up</u></string>
+
+    <string name="registerTitleText">Register</string>
+    <string name="registerUsernameHint">Enter username</string>
+    <string name="registerEmailHint">Enter email address</string>
+    <string name="registerPasswordHint">Password</string>
+    <string name="registerPasswordConfirmHint">Confirm Password</string>
+
+</resources>
