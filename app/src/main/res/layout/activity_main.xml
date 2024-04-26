@@ -50,13 +50,20 @@
         android:autofillHints="password"
         android:layout_marginTop="20dp"
         android:hint="@string/enterPasswordForLogin" />
-
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/btnLogin"
+    <TextView
+        android:id="@+id/forgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:text="@string/forgotPasswordTextLink"
+        android:layout_marginLeft="270dp"
+        android:textSize="15sp" />
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/white"
         android:text="@string/loginButtonText"
         android:textSize="20sp"
