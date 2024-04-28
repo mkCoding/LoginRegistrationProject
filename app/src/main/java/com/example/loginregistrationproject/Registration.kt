@@ -56,7 +56,7 @@ class Registration : AppCompatActivity() {
                 Patterns.EMAIL_ADDRESS.matcher(registerEmailString).matches() ?: false
 
             var passRegex =
-                "^.*(?=.{8,})(?=.+[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#\$%^&+=]).*\$"
+                "^.*(?=.{8,})(?=.+[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%^&+=]).*\$"
 
 
             var isValidRegisterPassword =

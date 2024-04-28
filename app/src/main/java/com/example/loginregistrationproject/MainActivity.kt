@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
 
             //assign true/false after email and password is validated
             isValidEmail = pattern.matcher(submittedEmail).matches()?: false //validate email
-            isValidPassword = submittedPassword.matches("[0-9a-zA-Z\\W]{8,}".toRegex()) //validate password
+            isValidPassword = submittedPassword.matches("^.*(?=.{8,})(?=.+[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#\$%^&+=()]).*\$".toRegex()) //validate password
 
             /*
             Created when conditional statement
@@ -58,6 +58,13 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        //Add forgot password link functionality
+        val intent2 = Intent(this,ForgotPassword::class.java)
+        val forgotPassword = findViewById<TextView>(R.id.tvForgotPasswordLink)
+        forgotPassword.setOnClickListener {
+            startActivity(intent2) //will navigate to ForgotPassword screen
+        }
+
         //Add sign up link functionality
         val signUpLink = findViewById<TextView>(R.id.tvSignUpLink)
         val intent = Intent(this, Registration::class.java) //explicit intent
@@ -68,5 +75,6 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this,"Link clicked", Toast.LENGTH_SHORT).show()
             startActivity(intent)
         }
+
     }
 }
